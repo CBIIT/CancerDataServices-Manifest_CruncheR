@@ -1,8 +1,8 @@
 #!/usr/bin/env Rscript
 
-#Cancer Data Services - Submission CruncheR
+#Cancer Data Services - Manifest CruncheR
 
-#This script will take data from a bucket, download it, and concatenate it for verification and indexing manifest creation.
+#This script will download data from a bucket, or data from a directory, and concatenate it for verification and indexing manifest creation.
 
 ##################
 #
@@ -12,7 +12,7 @@
 
 #Run the following command in a terminal where R is installed for help.
 
-#Rscript --vanilla CDS-Submission_CruncheR.R --help
+#Rscript --vanilla CDS-Manifest_CruncheR.R --help
 
 
 ##################
@@ -60,7 +60,7 @@ option_list = list(
 )
 
 #create list of options and values for file input
-opt_parser = OptionParser(option_list=option_list, description = "\nCDS-MCI_CruncheR\n v.1.3.1\n\nPlease supply the following script with the AWS bucket location and grep term or a directory with the submission templates, and the CDS template file.")
+opt_parser = OptionParser(option_list=option_list, description = "\nManifest_CruncheR\n v.1.3.1\n\nPlease supply the following script with the AWS bucket location and grep term or a directory with the submission templates, and the CDS template file.")
 opt = parse_args(opt_parser)
 
 #If no template is presented, return --help, stop and print the following message.
