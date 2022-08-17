@@ -33,3 +33,5 @@ An example using test data to run this script with a directory of multiple submi
 ```
 Rscript --vanilla CDS-Manifest_CrunchR.R -t CDS_submission_metadata_template-v1.3.xlsx -d test_files/test_folder/
 ```
+
+The CDS_submission_metadata_template can be found in this [repo](https://github.com/CBIIT/CancerDataServices-SubmissionValidationR).
