@@ -27,3 +27,9 @@ Options:
 	-h, --help
 		Show this help message and exit
 ```
+
+An example using test data to run this script with a directory of multiple submission files:
+
+```
+Rscript --vanilla CDS-Manifest_CrunchR.R -t CDS_submission_metadata_template-v1.3.xlsx -d test_files/test_folder/
+```
