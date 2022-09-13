@@ -191,7 +191,7 @@ output_file=paste("Metadata_merge_",
                   sep="")                 
 
 #write out the combined metadata sheet as a file in tsv format.
-write_tsv(x = df_all,file = paste(wd,output_file,sep = "/"),na="")
+write_tsv(x = df_all,file = paste(wd,"/",output_file,".tsv",sep = ""),na="")
 
 cat("The file processing has completed.\n\n")
 
