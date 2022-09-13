@@ -182,20 +182,13 @@ for (file in file_list){
 #remove duplicate rows.
 df_all=unique(df_all)
 
-#create output file name
+#create output file name               
 output_file=paste("Metadata_merge_",
                   stri_replace_all_fixed(
-                    str = stri_replace_all_fixed(
-                      str = stri_replace_all_fixed(
-                        str = Sys.time(),
-                        pattern = ":",
-                        replacement = "_"),
-                      pattern = "-",
-                      replacement = "_"),
-                    pattern = " ",
+                    str = Sys.Date(),
+                    pattern = "-",
                     replacement = "_"),
-                  ".tsv",
-                  sep="")
+                  sep="")                 
 
 #write out the combined metadata sheet as a file in tsv format.
 write_tsv(x = df_all,file = paste(wd,output_file,sep = "/"),na="")
