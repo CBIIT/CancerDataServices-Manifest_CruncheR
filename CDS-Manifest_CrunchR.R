@@ -148,7 +148,7 @@ if (is.null(new_dir)){
 }
 
 #Read in blank metadata from template
-df_meta_temp=suppressMessages(read_xlsx(path =template_path,sheet = "Metadata"))
+df_meta_temp=suppressMessages(read_xlsx(path =template_path,sheet = "Metadata", col_types = "text"))
 
 #Setup collection data fram from template.
 df_all=df_meta_temp
@@ -176,7 +176,7 @@ for (file in file_list){
   }
   
   #Bind the newly read data frame to the running total data frame.
-  df_all=rbind(df_all,df)
+  df_all=bind_rows(df_all,df)
 }
 
 #remove duplicate rows.
@@ -194,4 +194,3 @@ output_file=paste("Metadata_merge_",
 write_tsv(x = df_all,file = paste(wd,"/",output_file,".tsv",sep = ""),na="")
 
 cat("The file processing has completed.\n\n")
-
