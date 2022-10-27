@@ -7,7 +7,7 @@ To run the script on a CDS v1.3.1 template, run the following command in a termi
 
 ```
 CDS-Manifest_CruncheR
- v.1.3.1
+ v2.0.0
 
 Please supply the following script with the AWS bucket location and grep term or a directory with the submission templates, and the CDS template file.
 
