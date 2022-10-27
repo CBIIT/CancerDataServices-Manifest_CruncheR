@@ -183,14 +183,14 @@ for (file in file_list){
 df_all=unique(df_all)
 
 #create output file name               
-output_file=paste("Metadata_merge_",
+output_file=paste("MetaMerge",
                   stri_replace_all_fixed(
                     str = Sys.Date(),
                     pattern = "-",
-                    replacement = "_"),
+                    replacement = ""),
                   sep="")                 
 
 #write out the combined metadata sheet as a file in tsv format.
 write_tsv(x = df_all,file = paste(wd,"/",output_file,".tsv",sep = ""),na="")
 
-cat("The file processing has completed.\n\n")
+cat(paste("\n\nProcess Complete.\n\nThe output file can be found here: ",wd,"/\n\n",sep = "")) 
