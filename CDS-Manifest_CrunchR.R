@@ -60,7 +60,7 @@ option_list = list(
 )
 
 #create list of options and values for file input
-opt_parser = OptionParser(option_list=option_list, description = "\nManifest_CruncheR\n v.1.3.1\n\nPlease supply the following script with the AWS bucket location and grep term or a directory with the submission templates, and the CDS template file.")
+opt_parser = OptionParser(option_list=option_list, description = "\nManifest_CruncheR v2.0.0\n\nPlease supply the following script with the AWS bucket location and grep term or a directory with the submission templates, and the CDS template file.")
 opt = parse_args(opt_parser)
 
 #If no template is presented, return --help, stop and print the following message.
