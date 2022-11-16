@@ -1,7 +1,7 @@
 # CancerDataServices-Manifest_CruncheR
 This script will take either a bucket with a grep term to pull all CDS manifest submission files, or a directory with CDS manifest submission files and concatenate them into one file.
 
-To run the script on a CDS v1.3.1 template, run the following command in a terminal where R is installed for help.
+To run the script on a [CDS template](https://github.com/CBIIT/cds-model/tree/main/metadata-manifest), run the following command in a terminal where R is installed for help.
 
 ```Rscript --vanilla CDS-Manifest_CruncheR.R -h```
 
